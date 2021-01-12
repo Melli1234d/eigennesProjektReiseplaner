@@ -1,0 +1,103 @@
+{
+	"name": "react-native-expo-archetype",
+	"version": "0.0.1",
+	"main": "index.js",
+	"scripts": {
+		"start": "expo start",
+		"android": "expo start --android",
+		"ios": "expo start --ios",
+		"web": "expo start --web",
+		"eject": "expo eject",
+		"lint": "yarn run eslint src/App.tsx src",
+		"lint:fix": "yarn run eslint --fix src/App.tsx src",
+		"lint:scss": "stylelint src",
+		"lint:scss:fix": "stylelint 'src/**/*.{ts,js,tsx,jsx}' --fix",
+		"prettify": "prettier --write src/**/*.ts",
+		"test": "jest --watch --coverage=false",
+		"test:debug": "jest -o --watch --coverage=false",
+		"test:update-snapshots": "jest -u --coverage=false",
+		"test:ci": "jest --coverage",
+		"test:checkTs": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@expo/vector-icons": "^12.0.2",
+		"@react-native-community/masked-view": "0.1.10",
+		"@react-navigation/bottom-tabs": "^5.11.2",
+		"@react-navigation/native": "5.8.10",
+		"@react-navigation/stack": "^5.12.6",
+		"@reduxjs/toolkit": "1.5.0",
+		"expo": "~40.0.0",
+		"expo-asset": "~8.2.1",
+		"expo-constants": "~9.3.0",
+		"expo-font": "~8.4.0",
+		"expo-linking": "^2.0.0",
+		"expo-status-bar": "~1.0.3",
+		"expo-web-browser": "~8.6.0",
+		"os": "0.1.1",
+		"react": "16.13.1",
+		"react-dom": "16.13.1",
+		"react-is": "16.13.1",
+		"react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",
+		"react-native-gesture-handler": "~1.8.0",
+		"react-native-get-random-values": "1.5.1",
+		"react-native-safe-area-context": "3.1.9",
+		"react-native-screens": "~2.15.0",
+		"react-native-web": "~0.13.12",
+		"react-persist": "^1.0.2",
+		"react-redux": "7.2.2",
+		"redux": "4.0.5",
+		"styled-components": "^5.2.1",
+		"supports-color": "8.1.0"
+	},
+	"devDependencies": {
+		"@babel/core": "7.12.10",
+		"@babel/eslint-parser": "7.12.1",
+		"@testing-library/react-native": "7.1.0",
+		"@types/eslint": "7.2.6",
+		"@types/jest": "^25.2.0",
+		"@types/react": "~16.9.35",
+		"@types/react-dom": "~16.9.8",
+		"@types/react-native": "~0.63.2",
+		"@types/react-redux": "^7.1.15",
+		"@types/react-test-renderer": "16.9.3",
+		"@types/styled-components-react-native": "^5.1.0",
+		"babel-plugin-styled-components": "1.12.0",
+		"babel-preset-expo": "8.3.0",
+		"eslint": "7.17.0",
+		"eslint-config-prettier": "6.11.0",
+		"eslint-plugin-import": "^2.22.1",
+		"eslint-plugin-prettier": "3.1.4",
+		"eslint-plugin-react": "^7.22.0",
+		"eslint-plugin-react-hooks": "4.1.0",
+		"eslint-plugin-react-native": "^3.10.0",
+		"husky": "4.3.7",
+		"jest-expo": "~40.0.0",
+		"jest-styled-components": "^7.0.3",
+		"lint-staged": "^10.5.3",
+		"prettier": "^2.2.1",
+		"react-test-renderer": "16.13.1",
+		"stylelint": "^13.8.0",
+		"stylelint-config-recommended": "^3.0.0",
+		"stylelint-config-styled-components": "^0.1.1",
+		"stylelint-processor-styled-components": "^1.10.0",
+		"ts-node": "^9.1.1",
+		"typescript": "^4.1.3"
+	},
+	"private": true,
+	"eslintConfig": {
+		"extends": "react-native"
+	},
+	"lint-staged": {
+		"*.{ts,tsx,js,jsx}": [
+			"yarn run eslint --fix"
+		],
+		"*.{md,json}": [
+			"prettier --write"
+		]
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "yarn run test:checkTs && lint-staged"
+		}
+	}
+}
