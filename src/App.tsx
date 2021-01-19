@@ -9,7 +9,6 @@ import Navigation from './navigation';
 export default function App() {
 	const isLoadingComplete = useCachedResources();
 	const colorScheme = useColorScheme();
-	crypto.getRandomValues(null);
 
 	if (!isLoadingComplete) {
 		return null;

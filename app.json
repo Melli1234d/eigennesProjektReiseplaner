@@ -1,6 +1,6 @@
 {
 	"expo": {
-		"name": "react-native-expo-archetype",
+		"name": "React Native Expo Archetype",
 		"slug": "react-native-expo-archetype",
 		"version": "1.0.0",
 		"orientation": "portrait",
@@ -25,6 +25,7 @@
 		},
 		"web": {
 			"favicon": "./assets/images/favicon.png"
-		}
+		},
+		"scheme": "react-native-expo-archtype"
 	}
 }
