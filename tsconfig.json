@@ -22,7 +22,7 @@
 	},
 	"types": ["react", "react-native"],
 	"exclude": [
-		"src/App.tsx",
+		"index.js",
 		"babel.config.js",
 		"jest.config.js",
 		".eslintrc.js",
