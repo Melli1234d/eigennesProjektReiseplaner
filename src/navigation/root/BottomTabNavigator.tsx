@@ -4,11 +4,23 @@ import { createStackNavigator } from '@react-navigation/stack';
 import * as React from 'react';
 import styled from 'styled-components/native';
 
-import Colors from '../constants/Colors';
-import useColorScheme from '../hooks/useColorScheme';
-import TabOneScreen from '../components/screens/TabOneScreen';
-import TabTwoScreen from '../components/screens/TabTwoScreen';
-import { BottomTabParamList, TabOneParamList, TabTwoParamList } from '../types';
+import themes from '@constants/themes';
+import useColorScheme from '@hooks/useColorScheme';
+import TabTwoScreen from '@components/second-tab/__screens__/TabTwoScreen/TabTwoScreen';
+import TabOneScreen from '@components/first-tab/__screens__/TabOneScreen/TabOneScreen';
+
+export type BottomTabParamList = {
+	TabOne: undefined;
+	TabTwo: undefined;
+};
+
+export type TabOneParamList = {
+	TabOneScreen: undefined;
+};
+
+export type TabTwoParamList = {
+	TabTwoScreen: undefined;
+};
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
 
@@ -18,7 +30,7 @@ export default function BottomTabNavigator() {
 	return (
 		<BottomTab.Navigator
 			initialRouteName="TabOne"
-			tabBarOptions={{ activeTintColor: Colors[colorScheme].tint }}
+			tabBarOptions={{ activeTintColor: themes[colorScheme].tint }}
 		>
 			<BottomTab.Screen
 				name="TabOne"
@@ -49,7 +61,7 @@ function TabBarIcon(props: { name: string; color: string }) {
 }
 
 const StyledIonIcon = styled(Ionicons)`
-	margin-bottom: -3;
+	margin-bottom: -3px;
 `;
 
 // Each tab has its own navigation stack, you can read more about this pattern here:

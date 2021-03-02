@@ -13,6 +13,7 @@ module.exports = {
 	extends: [
 		'plugin:import/warnings',
 		'plugin:react-native/all',
+		'plugin:react-hooks/recommended',
 		'prettier',
 		'prettier/react'
 	],
@@ -23,14 +24,68 @@ module.exports = {
 		'import/order': [
 			'error',
 			{
-				groups: ['builtin', 'external', 'parent', 'sibling', 'index'],
+				groups: [
+					'index',
+					'builtin',
+					'external',
+					'internal',
+					'parent',
+					'sibling'
+				],
+				pathGroups: [
+					{
+						pattern: '@assets/**',
+						group: 'external'
+					},
+					{
+						pattern: '@components/**',
+						group: 'internal'
+					},
+					{
+						pattern: '@constants/**',
+						group: 'internal'
+					},
+					{
+						pattern: '@hocs/**',
+						group: 'internal'
+					},
+					{
+						pattern: '@hooks/**',
+						group: 'internal'
+					},
+					{
+						pattern: '@contexts/**',
+						group: 'internal'
+					},
+					{
+						pattern: '@models/**',
+						group: 'internal'
+					},
+					{
+						pattern: '@navigation/**',
+						group: 'internal'
+					},
+					{
+						pattern: '@util/**',
+						group: 'internal'
+					}
+				],
+				pathGroupsExcludedImportTypes: ['builtin'],
 				'newlines-between': 'always'
 			}
 		],
-		'react-native/no-raw-text': [
-			2,
+		'react-native/no-raw-text': 'off',
+		'no-restricted-imports': [
+			'error',
 			{
-				skip: ['MonoText']
+				paths: [
+					{
+						name: 'react-native',
+						importNames: ['StyleSheet'],
+						message:
+							"Please import 'styled' from 'styled-components/native' instead."
+					}
+				]
 			}
 		]
 	},
