@@ -15,11 +15,11 @@ Main project specific files, which can be divided into the following technical c
 Contains all UI Components. This includes components of any complexity.
 This folder is structured on a feature-first basis, which is a more scalable architecture approach for medium to large applications.
 
-##### Explanation of the Atomic-Design Pattern
+##### Explanation of the Directory structure within feature folders
 
 An inherent "problem" with React is that pretty much everything is a component. It is therefore smart to introduce some sort of grouping within the components folder.
 
-In this project, we therefor put Screens/Pages in a special subfolder inside the the accompanying feature folder.
+In this project, we put Screens/Pages in a special subfolder inside the the accompanying feature folder.
 
 - Pages/**Screens** ✓ (`components/<feature>/__screens__/<component-name>`, screens in adesso mobile terminology)
 
@@ -52,18 +52,15 @@ This ensures that at a later time deep-linking can be easily introduced.
 The general structure of the navigation can be depicted as follows:
 
 ```
-Navigation/Root (Conditionally chooses Navigator to show depending on user state)
-|-- AccountStack (StackNavigator)
-    |-- ...
 |-- RootNavigator (StackNavigator)
     |-- BottomTabNavigator (BottomTabsNavigator)
-        |-- TabOne (StackNavigator)
+        |-- TabOneNavigator (StackNavigator)
             |-- TabOneScreen
             |-- ...
         |-- TabTwoNavigator (StackNavigator)
             |-- TabTwoScreen
             |-- ...
-    |-- NotFound (StackNavigator)
+    |-- NotFound
         |-- ...
 ```
 
