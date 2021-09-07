@@ -3,21 +3,9 @@ import * as Linking from 'expo-linking';
 export default {
 	prefixes: [Linking.makeUrl('/')],
 	config: {
+		// For deep-linking, this maps a nav-state to an url
 		screens: {
-			Root: {
-				screens: {
-					TabOne: {
-						screens: {
-							TabOneScreen: 'one'
-						}
-					},
-					TabTwo: {
-						screens: {
-							TabTwoScreen: 'two'
-						}
-					}
-				}
-			},
+			Root: {}, //TODO: Fix Deep-Link config
 			NotFound: '*'
 		}
 	}

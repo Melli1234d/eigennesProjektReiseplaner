@@ -14,8 +14,7 @@ module.exports = {
 		'plugin:import/warnings',
 		'plugin:react-native/all',
 		'plugin:react-hooks/recommended',
-		'prettier',
-		'prettier/react'
+		'prettier'
 	],
 	plugins: ['react', 'react-native', 'prettier'],
 	parser: '@babel/eslint-parser',
