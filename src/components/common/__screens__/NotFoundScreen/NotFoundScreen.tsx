@@ -20,7 +20,7 @@ export default function NotFoundScreen({
 }
 
 const ViewContainer = styled(View)`
-	background-color: #fff;
+	background-color: white;
 	padding: 20px;
 `;
 

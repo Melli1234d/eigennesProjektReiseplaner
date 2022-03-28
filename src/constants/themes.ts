@@ -1,17 +1,22 @@
 export type ThemeProps = {
 	lightColor?: string;
 	darkColor?: string;
+	blueColor?: string;
 };
 
-const tintColorLight = '#2f95dc';
+const tintColorLight = '#0071BF';
 const tintColorDark = '#fff';
 
 /**
  * TODO: Replace this implementation with whatever UI Framework you're using
  */
 export default {
+	blue: {
+		text: '#0071B9',
+		background: '#fff'
+	},
 	light: {
-		text: '#000',
+		text: 'black',
 		background: '#fff',
 		tint: tintColorLight,
 		tabIconDefault: '#ccc',

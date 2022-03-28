@@ -36,5 +36,6 @@
 		".eslintrc.js",
 		"./bin/**/**"
 	],
-	"extends": "expo/tsconfig.base"
+	"extends": "expo/tsconfig.base",
+	"include": ["src/**/*"]
 }

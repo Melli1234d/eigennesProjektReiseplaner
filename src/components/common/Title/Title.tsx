@@ -11,6 +11,8 @@ export function Title(props: TitleProps) {
 }
 
 const TitleStyled = styled(DefaultText)`
-	font-size: 20px;
-	font-weight: bold;
+	font-size: 45px;
+	margin-bottom: 0.5rem;
+	color: #0071b9;
+	margin-top: 4.5rem;
 `;
