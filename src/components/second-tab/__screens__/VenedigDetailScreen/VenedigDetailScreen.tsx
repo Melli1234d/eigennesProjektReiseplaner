@@ -17,9 +17,9 @@ import { DetailSelection } from '@components/common/DetailSelection/DetailSelect
 type Props = StackScreenProps<TabTwoParamList, 'VenedigDetailScreen'>;
 export default function VenedigDetailScreen({ navigation }: Props) {
 	return (
-		<Container>
+		<Container  style={{backgroundColor:'white', paddingTop: '7rem', paddingBottom: '8rem'}}>
 			<DetailContainer>
-				<CloseButton onPress={() => navigation.navigate('TabTwoScreen')}>
+				<CloseButton onPress={() => navigation.navigate('TabTwoScreen')} style={{marginLeft: '17rem'}}>
 					<AntDesign name="close" size={30} color="#0071B9" />{' '}
 				</CloseButton>
 				<DetailTitle>Venedig</DetailTitle>

@@ -73,7 +73,7 @@ export default function TravelQuizScreen({ navigation }: Props) {
 
 			<Image
 				source={require('@assets/images/travel.png')}
-				style={{ minWidth: '90%', minHeight: '60%' }}
+				style={{ width: '100%', minHeight: '115%' }}
 			/>
 			<Container
 				style={{ justifyContent: 'space-between', flexDirection: 'row' }}

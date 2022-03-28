@@ -108,7 +108,7 @@ export default function TabThreeScreen({ navigation }: Props) {
 
 	return (
 		<Container>
-			<Title style={{ paddingLeft: '1.5rem', paddingRight: '1.5rem' }}>
+			<Title style={{ paddingLeft: '1.5rem', paddingRight: '1.5rem',  }}>
 				Vorschläge
 			</Title>
 			<Paragraph style={{ paddingLeft: '1.5rem' }}>
@@ -117,6 +117,7 @@ export default function TabThreeScreen({ navigation }: Props) {
 			</Paragraph>
 			<View
 				style={{
+					justifyContent: 'space-between',
 					flexDirection: 'row',
 					paddingLeft: '1.5rem',
 					paddingRight: '1.5rem',
@@ -134,7 +135,7 @@ export default function TabThreeScreen({ navigation }: Props) {
 				renderItem={({ item }) => (
 					<View
 						style={{
-
+							marginLeft: '3.5rem',
 							padding: '2rem',
 						}}
 					>

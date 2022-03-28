@@ -80,7 +80,7 @@ export default function BottomTabNavigator() {
 	return (
 		<BottomTab.Navigator
 			initialRouteName="TabOne"
-			screenOptions={{ tabBarActiveTintColor: themes[colorScheme].tint }}
+			screenOptions={{ tabBarActiveTintColor: themes[colorScheme].tint ,headerShown: false}}
 		>
 			<BottomTab.Screen
 				name="TabOne"
@@ -99,7 +99,7 @@ export default function BottomTabNavigator() {
 					tabBarIcon: ({ color }) => (
 						<AntDesign name="heart" size={24} color={color} />
 					),
-					title: 'Favoriten'
+					title: 'Favoriten',
 				}}
 			/>
 			<BottomTab.Screen

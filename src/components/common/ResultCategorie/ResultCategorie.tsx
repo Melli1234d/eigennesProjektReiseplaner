@@ -15,5 +15,6 @@ const TouchableOpacityStyle = styled(TouchableOpacity)`
 	border-bottom-width: 1px;
 	border-bottom-color: #0071b9;
 	font-size: 16px;
+	justify-content: center;
 	font-family: Helvetica;
 `;

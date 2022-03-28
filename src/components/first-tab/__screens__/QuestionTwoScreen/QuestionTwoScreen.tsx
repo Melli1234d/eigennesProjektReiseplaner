@@ -63,7 +63,7 @@ export default function QuestionTwoScreen({ navigation }: Props) {
 
 			<Image
 				source={require('@assets/images/questiontwo.png')}
-				style={{ minWidth: '90%', minHeight: '50%' }}
+				style={{ minWidth: '90%', minHeight: '95%' }}
 			/>
 			<Container
 				style={{ justifyContent: 'space-between', flexDirection: 'row' }}

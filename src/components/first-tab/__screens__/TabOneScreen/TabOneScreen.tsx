@@ -13,7 +13,7 @@ type Props = StackScreenProps<TabOneParamList, 'TabOneScreen'>;
 export default function TabOneScreen({ navigation }: Props) {
 	return (
 		<View>
-			<Container style={{ backgroundColor: '#F8FCFF' }}>
+			<Container style={{ backgroundColor: 'white' }}>
 				<Title>Perfekter Trip</Title>
 				<Paragraph>
 					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -25,8 +25,8 @@ export default function TabOneScreen({ navigation }: Props) {
 				</Button>
 			</Container>
 			<Image
-				source={require('@assets/images/checkphoto.png')}
-				style={{ minWidth: '100%', minHeight: '183%' }}
+				source={require('@assets/images/background2.png')}
+				style={{ width: '100%', height: '250%' }}
 			/>
 		</View>
 	);
