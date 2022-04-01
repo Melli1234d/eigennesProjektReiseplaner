@@ -35,7 +35,7 @@ export const allDestinations: Destination[] = [
 	{
 		name: 'Miami Beach',
 		text: 'Lorem ipsum dolor sit amet, consetetur',
-		image: require('@assets/images/Venedig.png'),
+		image: require('@assets/images/Miami_Beach.png'),
 		hasOcean: true,
 		hasCity: false,
 		hasMountain: false,
@@ -45,7 +45,7 @@ export const allDestinations: Destination[] = [
 	{
 		name: 'Mombasa',
 		text: 'Lorem ipsum dolor sit amet, consetetur',
-		image: require('@assets/images/Venedig.png'),
+		image: require('@assets/images/Mombasa.png'),
 		hasOcean: true,
 		hasCity: false,
 		hasMountain: false,
@@ -54,9 +54,9 @@ export const allDestinations: Destination[] = [
 	},
 
 	{
-		name: 'Modeira',
+		name: 'Madeira',
 		text: 'Lorem ipsum dolor sit amet, consetetur',
-		image: require('@assets/images/Venedig.png'),
+		image: require('@assets/images/Madeira.png'),
 		hasOcean: true,
 		hasCity: false,
 		hasMountain: false,
@@ -66,7 +66,7 @@ export const allDestinations: Destination[] = [
 	{
 		name: 'Vancouver',
 		text: 'Lorem ipsum dolor sit amet, consetetur',
-		image: require('@assets/images/Venedig.png'),
+		image: require('@assets/images/Vancouver.png'),
 		hasOcean: true,
 		hasCity: false,
 		hasMountain: false,
@@ -76,7 +76,7 @@ export const allDestinations: Destination[] = [
 	{
 		name: 'Belgien',
 		text: 'Lorem ipsum dolor sit amet, consetetur',
-		image: require('@assets/images/Venedig.png'),
+		image: require('@assets/images/Belgien.png'),
 		hasOcean: true,
 		hasCity: false,
 		hasMountain: false,
@@ -86,7 +86,7 @@ export const allDestinations: Destination[] = [
 	{
 		name: ' Rügen',
 		text: 'Lorem ipsum dolor sit amet, consetetur',
-		image: require('@assets/images/Venedig.png'),
+		image: require('@assets/images/Rügen.png'),
 		hasOcean: true,
 		hasCity: false,
 		hasMountain: false,
@@ -96,7 +96,7 @@ export const allDestinations: Destination[] = [
 	{
 		name: ' Kenia',
 		text: 'Lorem ipsum dolor sit amet, consetetur',
-		image: require('@assets/images/Venedig.png'),
+		image: require('@assets/images/Kenia.png'),
 		hasOcean: false,
 		hasCity: false,
 		hasMountain: true,
@@ -106,7 +106,7 @@ export const allDestinations: Destination[] = [
 	{
 		name: 'Jamaika',
 		text: 'Lorem ipsum dolor sit amet, consetetur',
-		image: require('@assets/images/Venedig.png'),
+		image: require('@assets/images/Jamaika.png'),
 		hasOcean: false,
 		hasCity: false,
 		hasMountain: true,
@@ -116,7 +116,7 @@ export const allDestinations: Destination[] = [
 	{
 		name: 'Bieszczady',
 		text: 'Lorem ipsum dolor sit amet, consetetur',
-		image: require('@assets/images/Venedig.png'),
+		image: require('@assets/images/Bieszczady.png'),
 		hasOcean: false,
 		hasCity: false,
 		hasMountain: true,
@@ -126,7 +126,7 @@ export const allDestinations: Destination[] = [
 	{
 		name: 'Salalah',
 		text: 'Lorem ipsum dolor sit amet, consetetur',
-		image: require('@assets/images/Venedig.png'),
+		image: require('@assets/images/Salalah.png'),
 		hasOcean: false,
 		hasCity: true,
 		hasMountain: false,
@@ -136,17 +136,17 @@ export const allDestinations: Destination[] = [
 	{
 		name: '  Budapest',
 		text: 'Lorem ipsum dolor sit amet, consetetur',
-		image: require('@assets/images/Venedig.png'),
+		image: require('@assets/images/Budapest.png'),
 		hasOcean: false,
 		hasCity: true,
 		hasMountain: false,
 		link: 'BudapestDetailScreen',
-		temperature: TemperaturePreference.Cold,
+		temperature: TemperaturePreference.Cold
 	},
 	{
 		name: '  Singapur',
 		text: 'Lorem ipsum dolor sit amet, consetetur',
-		image: require('@assets/images/Venedig.png'),
+		image: require('@assets/images/Singapur.png'),
 		hasOcean: false,
 		hasCity: true,
 		hasMountain: false,
@@ -156,17 +156,17 @@ export const allDestinations: Destination[] = [
 	{
 		name: ' Paris',
 		text: 'Lorem ipsum dolor sit amet, consetetur',
-		image: require('@assets/images/Venedig.png'),
+		image: require('@assets/images/Paris.png'),
 		hasOcean: false,
 		hasCity: true,
 		hasMountain: false,
 		link: 'ParisDetailScreen',
-		temperature: TemperaturePreference.Cold,
+		temperature: TemperaturePreference.Cold
 	},
 	{
 		name: '  Rotterdamm',
 		text: 'Lorem ipsum dolor sit amet, consetetur',
-		image: require('@assets/images/Venedig.png'),
+		image: require('@assets/images/Rotterdamm.png'),
 		hasOcean: false,
 		hasCity: true,
 		hasMountain: false,
@@ -176,7 +176,7 @@ export const allDestinations: Destination[] = [
 	{
 		name: '  Amsterdamm',
 		text: 'Lorem ipsum dolor sit amet, consetetur',
-		image: require('@assets/images/Venedig.png'),
+		image: require('@assets/images/Amsterdamm.png'),
 		hasOcean: false,
 		hasCity: true,
 		hasMountain: false,
